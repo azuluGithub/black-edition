@@ -23,10 +23,10 @@ class HomePageComponent extends PureComponent {
                     <Banner />
                 </div>
                 <GetCallBack />
-                <OurBranches />
                 <div className='HomePage-GradientThree'>
                     <OurServices isWhite={false} />
                 </div>
+                <OurBranches />
                 <Testimonials />
                 <GetInTouch />
                 <IntroVideo />

@@ -25,40 +25,40 @@
         font-weight: 600;
         text-align: center;
 
-        &_FadeIn,
-        &_Appear {
-            transition: opacity 250ms ease, 
-            transform 1000ms ease;
-        }
+        // &_FadeIn,
+        // &_Appear {
+        //     transition: opacity 250ms ease, 
+        //     transform 1000ms ease;
+        // }
 
-        &_FadeIn {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
+        // &_FadeIn {
+        //     opacity: 0;
+        //     transform: translateX(-50%);
+        // }
         
-        &_Appear {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        // &_Appear {
+        //     opacity: 1;
+        //     transform: translateX(0);
+        // }
     }
 
-    &-ContainerButton {
-        &_FadeIn,
-        &_Appear {
-            transition: opacity 250ms ease, 
-            transform 1000ms ease;
-        }
+    // &-ContainerButton {
+    //     &_FadeIn,
+    //     &_Appear {
+    //         transition: opacity 250ms ease, 
+    //         transform 1000ms ease;
+    //     }
 
-        &_FadeIn {
-            opacity: 0;
-            transform: translateX(50%);
-        }
+    //     &_FadeIn {
+    //         opacity: 0;
+    //         transform: translateX(50%);
+    //     }
         
-        &_Appear {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
+    //     &_Appear {
+    //         opacity: 1;
+    //         transform: translateX(0);
+    //     }
+    // }
 
     &-Button {
         box-shadow: var(--box-shadow);

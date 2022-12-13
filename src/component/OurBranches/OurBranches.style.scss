@@ -40,21 +40,21 @@
         color: var(--clr-primary);
 
         text-align: center;
-        &_FadeIn,
-        &_Appear {
-            transition: opacity 250ms ease, 
-            transform 1000ms ease;
-        }
+        // &_FadeIn,
+        // &_Appear {
+        //     transition: opacity 250ms ease, 
+        //     transform 1000ms ease;
+        // }
 
-        &_FadeIn {
-            opacity: 0;
-            transform: translateX(-50%);
-        }
+        // &_FadeIn {
+        //     opacity: 0;
+        //     transform: translateX(-50%);
+        // }
         
-        &_Appear {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        // &_Appear {
+        //     opacity: 1;
+        //     transform: translateX(0);
+        // }
     }
 
     &-Divider {
@@ -64,21 +64,21 @@
         background-color: var(--clr-tertiary);
     }
 
-    &-Content {
-        &_FadeIn,
-        &_Appear {
-            transition: opacity 250ms ease, 
-            transform 1000ms ease;
-        }
+    // &-Content {
+    //     &_FadeIn,
+    //     &_Appear {
+    //         transition: opacity 250ms ease, 
+    //         transform 1000ms ease;
+    //     }
 
-        &_FadeIn {
-            opacity: 0;
-            transform: translateX(50%);
-        }
+    //     &_FadeIn {
+    //         opacity: 0;
+    //         transform: translateX(50%);
+    //     }
         
-        &_Appear {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
+    //     &_Appear {
+    //         opacity: 1;
+    //         transform: translateX(0);
+    //     }
+    // }
 }
