@@ -1,0 +1,38 @@
+.TrackMyOrder {
+    background-color: var(--clr-white);
+
+    &-TrackMyOrderForm {
+        width: 60%;
+        margin: auto;
+    }
+
+    &-Title {
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        color: var(--clr-primary);
+    }
+
+    &-Divider {
+        width: 60px;
+        height: 4px;
+        margin: var(--space-xl) 0;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-Button {
+        background-color: var(--clr-tertiary) !important;
+        color: var(--clr-primary) !important;
+        box-shadow: var(--box-shadow);
+        margin-top: var(--fs-xl);
+
+        &:hover {
+            filter: opacity(0.5);
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        &-TrackMyOrderForm {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.GetAQuote {
+    background-color: var(--clr-white);
+
+    &-MoreInfo,
+    &-Address {
+        background-color: var(--clr-grey-faint);
+        padding: var(--space-lg);
+        margin-bottom: var(--space-xl);
+        box-shadow: var(--card-box-shadow);
+    }
+
+    &-AddressItem {
+        margin-bottom: var(--space-md);
+
+        &:nth-last-child(-n+1) {
+            margin-bottom: 0;
+        }
+    }
+
+    &-AddressItemTitle {
+        color: var(--clr-primary);
+        font-size: var(--fs-md);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &-AddressItemText {
+        color: #555;
+        font-weight: 500;
+        padding: 5px 0;
+        
+        &_Active {
+            color: rgb(204, 110, 75);
+            cursor: pointer;
+        }
+    }
+
+    &-MoreInfoItemTitle {
+        color: var(--clr-primary);
+        font-size: var(--fs-lg);
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
+    &-MoreInfoItemText {
+        color: #555;
+        font-weight: 500;
+        padding: var(--space-md) 0;
+    }
+
+
+    &-Title {
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        color: var(--clr-primary);
+        font-family: var(--ff-secondary);
+    }
+
+    &-Divider {
+        width: 60px;
+        height: 4px;
+        margin: var(--space-xl) 0;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-TextArea {
+        height: var(--space-xxxl);
+    }
+
+    &-Button {
+        box-shadow: var(--box-shadow);
+        background-color: var(--clr-tertiary) !important;
+        color: var(--clr-text) !important;
+
+        &:hover {
+            filter: opacity(0.5);
+        }
+    }
+
+    &-Split {
+        display: flex;
+        flex-direction: row;
+    
+        & > * {
+            flex-basis: 100%;
+        }
+    
+        & > * + * {
+            margin-left: 2rem;
+        }
+    }
+  
+    @media only screen and (max-width: 750px) {
+        &-Split {
+            flex-direction: column;
+        
+            & > * + * {
+                margin-left: 0;
+            }
+        }
+
+        &-GetAQuoteForm {
+            margin-top: 60px;
+        }
+
+        &-SocialImage {
+            width: 20px;
+            height: 20px;
+        }
+
+        &-InfoItemImage {
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+        }
+    }
+
+}

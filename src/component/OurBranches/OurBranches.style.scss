@@ -1,0 +1,84 @@
+.OurBranches {
+    min-height: 40vh;
+    background-color: var(--clr-grey-faint);
+
+    overflow: hidden;
+
+    &-CarouselContent {
+        background-color: var(--clr-white);
+        width:100%;
+        padding: var(--space-md) 0 var(--space-lg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-CarouselTitle  {
+        color: var(--clr-primary);
+        font-weight: 600;
+        font-size: var(--fs-lg);
+        padding-bottom: var(--space-sm);
+    }
+
+    &-CarouselText {
+        text-align: center;
+        max-width: 80%;
+        color: var(--clr-primary);
+    }
+
+    &-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-Title {
+        text-align: center;
+        font-size: var(--fs-xl);
+        font-family: var(--ff-secondary);
+        font-weight: 600;
+        color: var(--clr-primary);
+
+        text-align: center;
+        &_FadeIn,
+        &_Appear {
+            transition: opacity 250ms ease, 
+            transform 1000ms ease;
+        }
+
+        &_FadeIn {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        
+        &_Appear {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    &-Divider {
+        width: 60px;
+        height: 4px;
+        margin: var(--space-xxl) 0;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-Content {
+        &_FadeIn,
+        &_Appear {
+            transition: opacity 250ms ease, 
+            transform 1000ms ease;
+        }
+
+        &_FadeIn {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        
+        &_Appear {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

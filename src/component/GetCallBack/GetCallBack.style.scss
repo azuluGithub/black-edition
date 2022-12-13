@@ -1,0 +1,100 @@
+.GetCallBack {
+    // background-color: var(--clr-white);
+
+    &-WhyUsItem {
+        padding: var(--space-xl);
+        margin-bottom: var(--space-lg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-WhyUsItemImage {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--clr-primary);
+        border-radius: 50%;
+        border: 2px solid var(--clr-tertiary);
+        margin-bottom: var(--space-lg);
+    }
+
+    &-WhyUsItemImg {
+        width: 60%;
+        object-fit: contain;
+    }
+
+    &-WhyUsItemContentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &-WhyUsItemTitle {
+        color: var(--clr-primary);
+        font-weight: 600;
+        font-size: var(--fs-lg);
+        text-transform: capitalize;
+    }
+
+    &-WhyUsItemContent {
+        max-width: 80%;
+        color: var(--clr-primary);
+    }
+
+    &-Title {
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        color: var(--clr-primary);
+    }
+
+    &-Divider {
+        width: 60px;
+        height: 4px;
+        margin: var(--space-lg) 0;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-Spaced {
+        margin: var(--space-xl) 0;
+    }
+
+    &-Button {
+        background-color: var(--clr-tertiary) !important;
+        color: var(--clr-primary) !important;
+        box-shadow: var(--box-shadow);
+        margin-top: var(--fs-xl);
+
+        &:hover {
+            filter: opacity(0.5);
+        }
+    }
+
+    &-Split {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    
+        & > * {
+            flex-basis: 100%;
+        }
+    
+        & > * + * {
+            margin-left: 2rem;
+        }
+    }
+  
+    @media only screen and (max-width: 750px) {
+        &-Split {
+            flex-direction: column;
+        
+            & > * + * {
+                margin-left: 0;
+            }
+        }
+    }
+
+}

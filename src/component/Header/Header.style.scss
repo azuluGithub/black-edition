@@ -1,0 +1,156 @@
+:root {
+    --header-height: 80px;
+}
+
+.Header {
+    height: var(--header-height);
+    width: 100%;
+    z-index: 50;
+
+    &-Container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: var(--header-height);
+    }
+    
+    &-ToggleButton {
+        display: none;
+    }
+
+    &-Navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-MenuItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: var(--header-height);
+    }
+
+    &-Anchor {
+        position: relative;
+        padding: 0 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--ff-primary);
+        font-size: 0.875rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--clr-white);
+        height: var(--header-height);
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--clr-tertiary);
+            transition: all 0.3s ease-in;
+        }
+
+        &:hover {
+            color: var(--clr-tertiary);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &_Active {
+            font-weight: 600;
+            color: var(--clr-tertiary);
+        }
+    }
+    
+    &-ButtonContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: var(--header-height);
+    }
+ 
+    &-Button {
+        margin-left: var(--space-md);
+        padding: var(--space-md) var(--space-lg) !important;
+        background-color: var(--clr-tertiary) !important;
+        box-shadow: var(--box-shadow);
+
+        &:hover {
+            filter: opacity(0.5);
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        &-Button {
+            margin-left: 8px;
+            font-size: 14px !important;
+            padding: var(--space-md)!important;
+        }  
+    }
+
+    @media only screen and (max-width: 912px)  {
+        &-Navigation {
+            position: fixed;
+            flex-direction: column;
+            z-index: 1000;
+            inset: 0 0 0 30%;
+            padding: min(30vh, 10rem) 2rem;
+            transform: translateX(var(--transform-header));
+            transition: transform 250ms ease-out;
+            background-color: var(--clr-white);
+        }
+
+        &-ToggleButton {
+            display: block;
+            position: absolute;
+            right: 2rem;
+            z-index: 9000;
+            width: 2rem;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+        }
+
+        &-MenuIcon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        &-MenuItem {
+            border-bottom: none;
+    
+            &_Active {
+                border-bottom: none;
+            }
+        }
+
+        &-Anchor {
+            font-size: 1rem;
+            color: var(--clr-text);
+            text-align: center;
+        }
+
+        &-ButtonContainer {
+            flex-direction: column;
+        }
+     
+        &-Button {
+            margin-left: 0;
+            margin-top: var(--space-sm);
+        }
+    }
+}

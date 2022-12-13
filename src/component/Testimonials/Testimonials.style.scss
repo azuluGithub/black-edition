@@ -1,0 +1,60 @@
+.Testimonials {
+    min-height: 40vh;
+    background-color: var(--clr-white);
+
+    &-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-Title {
+        font-size: var(--fs-xl);
+        font-family: var(--ff-secondary);
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 36px;
+        color: var(--clr-primary);
+        text-align: center;
+        &_FadeIn,
+        &_Appear {
+            transition: opacity 250ms ease, 
+            transform 1000ms ease;
+        }
+
+        &_FadeIn {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        
+        &_Appear {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    &-Divider {
+        width: 60px;
+        height: 4px;
+        margin: var(--space-xxl) 0;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-Content {
+        &_FadeIn,
+        &_Appear {
+            transition: opacity 250ms ease, 
+            transform 1000ms ease;
+        }
+
+        &_FadeIn {
+            opacity: 0;
+            transform: translateX(50%);
+        }
+        
+        &_Appear {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

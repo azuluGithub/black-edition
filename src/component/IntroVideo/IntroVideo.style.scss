@@ -1,0 +1,91 @@
+.IntroVideo {
+     height: 500px;
+     position: relative;
+
+     &-Container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+     }
+
+     &-Title  {
+          font-size: var(--fs-xxl);
+          font-family: var(--ff-secondary);
+          line-height: 36px;
+          position: relative;
+          color: var(--clr-white);
+     }
+
+     &-Text {
+        padding: var(--space-xl) 0 var(--space-xxl);
+        font-weight: 500;
+        color: var(--clr-white);
+     }
+
+     &-PlayerImage {
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          border: 2px solid var(--clr-white);
+          cursor: pointer;
+
+          &:hover {
+               border: 2px solid var(--clr-tertiary);
+          }
+     }
+  
+     &-PlayerImg {
+          width: 80%;
+          height: 80%;
+          object-fit: contain;
+     }
+
+     &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: #225353a0;
+     }
+
+     &-Image {
+          height: 100%;
+          width: 100%;
+     }
+
+     &-Img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+     }
+
+     &-Container {
+          height: 200px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+     }
+
+     &-Video {
+          width: 100%;
+          height: auto;
+     }
+
+     &-Offline {
+          color: var(--clr-text);
+          font-weight: 500;
+          font-size: var(--space-lg);
+          text-align: center;
+          padding: var(--space-xxxl) 0;
+          background-color: var(--clr-white);
+          font-family: var(--ff-secondary);
+     }
+
+}

@@ -1,0 +1,196 @@
+.About {
+    overflow: hidden;
+
+    &-WhyUsContainer {
+        padding: var(--space-xxxl) 0;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            right: -100%;
+            z-index: -1;
+            background-color: var(--clr-grey-faint);
+        }
+    }
+
+    &-WorkingWithUsContainer {
+        padding: var(--space-xxxl) 0;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            right: -100%;
+            z-index: -1;
+            background-color: var(--clr-primary);
+        }
+    }
+
+    &-AboutComponents {
+        padding: var(--space-xxxl) 0;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            right: -100%;
+            z-index: -1;
+            background-color: var(--clr-white);
+        }
+    }
+
+    &-Content {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--clr-white);
+        padding: var(--space-md);
+
+        &_hasShadow {
+            box-shadow: var(--card-box-shadow);
+        }
+    }
+
+    &-ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-ContentHeading {
+        font-weight: 600;
+        font-size: var(--fs-xl);
+        color: var(--clr-primary);
+        font-family: var(--ff-secondary);
+        line-height: var(--space-xl);
+        text-align: center;
+
+        &_isWhite{
+            color: var(--clr-white);
+        }
+    }
+
+    &-ContentHeadingCount {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--clr-tertiary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--clr-primary);
+        font-size: var(--fs-xl);
+        font-weight: 600;
+        margin: 0 auto var(--space-md);
+    }
+
+    &-WorkingWithUsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-ContentHeadingSmall {
+        color: var(--clr-primary);
+        font-size: var(--fs-md);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &-Divider {
+        width: 60px;
+        height: 4px;
+        margin: var(--space-lg) 0 var(--space-sm) 0;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-ContentParagrph {
+        margin: var(--space-lg) 0 var(--space-xl) 0;
+        text-align: center;
+        color: #555;
+    }
+
+    &-ContentParagrphCheckMark {
+        position: relative;
+        margin-left: 30px;
+
+        &::before {
+            position: absolute;
+            content: '✓';
+            top: 0;
+            left: -30px;
+            font-size: 20px;
+        }
+
+        &_isBrown::before {
+            color: var(--clr-tertiary);
+        }
+
+        &_isBlue::before {
+            color: var(--clr-primary);
+        }
+    }
+
+    &-Image {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-ImageContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-Img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &-ContentButton {
+        box-shadow: var(--box-shadow);
+        
+        &:hover {
+            filter: opacity(0.5);
+        }
+    }
+
+    &-Split {
+        display: flex;
+        flex-direction: row;
+      
+        & > * {
+          flex-basis: 100%;
+        }
+      
+        & > * + * {
+          margin-left: 2rem;
+        }
+    }
+      
+    @media only screen and (max-width: 1000px) {
+        &-Split {
+          flex-direction: column;
+      
+          & > * {
+            margin-bottom: var(--space-md);
+          }
+
+          & > * + * {
+            margin-left: 0;
+          }
+        }
+    }
+}

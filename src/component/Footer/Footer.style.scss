@@ -1,0 +1,39 @@
+:root {
+    --footer-height: 60px;
+}
+
+.Footer {
+    height: var(--footer-height);
+    background-color: var(--clr-text);
+
+    &-Spacer {
+        height: 1px;
+        margin: auto;
+        background-color: var(--clr-tertiary);
+    }
+
+    &-FooterContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: var(--footer-height);
+    }
+
+    &-Components {
+        display: flex;
+    }
+
+    &-TextContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    &-Text {
+        color: var(--clr-white);
+    }
+    
+    &-Copyright {
+        color: var(--clr-tertiary);
+        font-weight: 600;
+    }
+}

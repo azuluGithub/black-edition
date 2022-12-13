@@ -1,0 +1,134 @@
+.Hero {
+     height: 40vh;
+     position: relative;
+
+     &-Components {
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+     }
+
+     &-Heading {
+          font-size: 50px;
+          color: var(--clr-tertiary);
+     }
+
+     &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: #1b3f3f99;
+     }
+
+     &-Image {
+          height: 100%;
+          width: 100%;
+     }
+
+     &-Img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+     }
+
+     &-Container {
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+     }
+
+     &-Contacts {
+          margin: var(--space-lg) 0 var(--space-md);
+     }
+  
+     &-Contact {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+     }
+  
+     &-ContactImage {
+          width: 30px;
+          height: 30px;
+          margin-right: var(--space-sm);
+     }
+  
+     &-ContactImg {
+          width: 100%;
+          object-fit: contain;
+     }
+  
+     &-ContactName {
+          color: var(--clr-white) !important;
+          font-size: 1rem;
+          font-weight: 500;
+     }
+
+     &-TextSpacer {
+          color: var(--clr-white) !important;
+          margin: 0 var(--space-sm);
+     }
+  
+     &-SocialContainer {
+          display: flex;
+     }
+  
+     &-SocialImage {
+          margin-right: var(--space-sm);
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          border-radius: 2px;
+     }
+  
+     &-SocialImg {
+          width: 100%;
+          object-fit: contain;
+     }
+     
+    @media only screen and (max-width: 640px) {
+          &-Heading {
+               font-size: 40px;
+          }
+
+          &-Contacts {
+               margin: var(--space-lg) 0 var(--space-sm) 0;
+          }
+       
+          &-Contact {
+               margin-bottom: var(--space-sm);
+          }
+    }
+
+    @media only screen and (max-width: 300px) {
+          &-Heading {
+               font-size: 30px;
+          }
+
+          &-Contacts {
+               margin: var(--space-lg) 0 5px 0;
+          }
+     
+          &-Contact {
+               margin-bottom: 5px;
+          }
+     
+          &-ContactName {
+               font-size: 0.875rem;
+          }
+
+          &-SocialImage,
+          &-ContactImage {
+               width: 20px;
+               height: 20px;
+          }
+     }
+}

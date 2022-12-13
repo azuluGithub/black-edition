@@ -1,0 +1,57 @@
+.HomePage {
+    &-GradientOne {
+
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(circle at 0% 0%, rgba(0, 150, 136, 0.3) 0%, rgba(5, 8, 10, 0.85) 0%, rgba(61, 129, 130, 1) 46%);
+
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(circle at 0% 0%, rgba(0, 150, 136, 0.3) 0%, rgba(5, 8, 10, 0.85) 0%, rgba(61, 129, 130, 1) 46%);
+
+        /* opera 11.10+ */
+        background:-o-radial-gradient(circle at 0% 0%, rgba(0, 150, 136, 0.3) 0%, rgba(5, 8, 10, 0.85) 0%, rgba(61, 129, 130, 1) 46%);
+
+        /* ie 10+ */
+        background:-ms-radial-gradient(circle at 0% 0%, rgba(0, 150, 136, 0.3) 0%, rgba(5, 8, 10, 0.85) 0%, rgba(61, 129, 130, 1) 46%);
+
+        /* global 92%+ browsers support */
+        background:radial-gradient(circle at 0% 0%, rgba(0, 150, 136, 0.3) 0%, rgba(5, 8, 10, 0.85) 0%, rgba(61, 129, 130, 1) 46%);
+
+    }
+
+    &-GradientTwo {
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(circle at 100% 49%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 11%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(circle at 100% 49%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 11%);
+    
+        /* opera 11.10+ */
+        background:-o-radial-gradient(circle at 100% 49%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 11%);
+    
+        /* ie 10+ */
+        background:-ms-radial-gradient(circle at 100% 49%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 11%);
+    
+        /* global 92%+ browsers support */
+        background:radial-gradient(circle at 100% 49%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 11%);
+    }
+
+    &-GradientThree {
+
+        /* ff 3.6+ */
+        background:-moz-radial-gradient(circle at 50% 50%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 27%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background:-webkit-radial-gradient(circle at 50% 50%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 27%);
+    
+        /* opera 11.10+ */
+        background:-o-radial-gradient(circle at 50% 50%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 27%);
+    
+        /* ie 10+ */
+        background:-ms-radial-gradient(circle at 50% 50%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 27%);
+    
+        /* global 92%+ browsers support */
+        background:radial-gradient(circle at 50% 50%, rgba(5, 8, 10, 0.72) 0%, rgba(61, 129, 130, 1) 27%);
+    
+    }
+
+}

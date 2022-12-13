@@ -1,0 +1,71 @@
+.FooterDetails {
+    background-color: var(--clr-text);
+
+    &-Split {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-SocialContainer {
+        display: flex;
+        margin-top: var(--space-lg);
+    }
+
+    &-SocialImage {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+
+    &-SocialImg {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &-QrContainer {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        width: 180px;
+        height: 200px;
+    }
+
+    &-Qr {
+        width: 80%;
+        object-fit: contain;
+    }
+
+    &-LinkElement {
+        margin: var(--space-md) 0;
+        color: #eee;
+        text-transform: capitalize;
+    }
+
+    &-LinkAnchor:hover {
+        text-decoration: underline;
+        color: var(--clr-grey-faint);
+    }
+
+    &-LinksTitle {
+        text-transform: capitalize;
+        font-weight: 900;
+        color: var(--clr-tertiary);
+        font-size: 20px;
+    }
+
+    
+    @media only screen and (max-width: 450px) {
+        &-Split {
+            flex-direction: column-reverse;
+        }
+
+        &-QrContainer {
+            margin-bottom: var(--space-md);
+        }
+    }
+}
