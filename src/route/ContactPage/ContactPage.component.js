@@ -12,7 +12,7 @@ class ContactPageComponent extends PureComponent {
     renderComponents() {
         const data = {
             heading: 'Contact Us',
-            url: `${process.env.PUBLIC_URL}/assets/images/hero/phone.jpg`
+            url: `${process.env.PUBLIC_URL}/assets/we4u/img_5.jpg`
         }
 
         return (

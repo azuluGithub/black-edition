@@ -31,15 +31,15 @@ const ContactComponent = ({ showNotification }) => {
       <div className='Contact-Address'>
         <div className='Contact-AddressItem'>
           <p className='Contact-AddressItemTitle'>{'Address'}</p>
-          <p className='Contact-AddressItemText'>{'10 Princess Street, Kya Sands, 2169, Johannesburg, Gauteng, RSA'}</p>
+          <p className='Contact-AddressItemText'>{'Johannesburg, Gauteng, ZA'}</p>
         </div>
         <div className='Contact-AddressItem'>
           <p className='Contact-AddressItemTitle'>{'Phone'}</p>
-          <p className='Contact-AddressItemText Contact-AddressItemText_Active'>{'(087) 550 1921 | (063) 489 6117'}</p>
+          <p className='Contact-AddressItemText Contact-AddressItemText_Active'>{'(011) 300 1111 | (023) 444 0369'}</p>
         </div>
         <div className='Contact-AddressItem'>
           <p className='Contact-AddressItemTitle'>{'Email Address'}</p>
-          <p className='Contact-AddressItemText Contact-AddressItemText_Active'>{'info@we4ulogistics.co.za'}</p>
+          <p className='Contact-AddressItemText Contact-AddressItemText_Active'>{'we4u@logistix.co.za'}</p>
         </div>
       </div>
     );

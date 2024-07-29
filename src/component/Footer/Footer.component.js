@@ -10,7 +10,7 @@ class FooterComponent extends PureComponent {
         <p className='Footer-Text'>
           {'Copyright '}
           <span className='Footer-Copyright'>{'©'}</span>
-          {' 2022 All rights reserved | Website done by S.M.I.C'}
+          {' 2022 All rights reserved | Website done by Arnold Zulu'}
         </p>
       </div>
     );

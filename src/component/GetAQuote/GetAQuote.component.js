@@ -26,11 +26,11 @@ const GetAQuoteComponent = ({ showNotification }) => {
         </div>
         <div className='GetAQuote-AddressItem'>
           <p className='GetAQuote-AddressItemTitle'>{'Phone'}</p>
-          <p className='GetAQuote-AddressItemText GetAQuote-AddressItemText_Active'>{'(087) 550 1921 | (063) 489 6117'}</p>
+          <p className='GetAQuote-AddressItemText GetAQuote-AddressItemText_Active'>{'(011) 300 1111 | (023) 444 0369'}</p>
         </div>
         <div className='GetAQuote-AddressItem'>
           <p className='GetAQuote-AddressItemTitle'>{'Email Address'}</p>
-          <p className='GetAQuote-AddressItemText GetAQuote-AddressItemText_Active'>{'info@we4ulogistics.co.za'}</p>
+          <p className='GetAQuote-AddressItemText GetAQuote-AddressItemText_Active'>{'we4u@logistix.co.za'}</p>
         </div>
       </div>
     );
@@ -74,21 +74,12 @@ const GetAQuoteComponent = ({ showNotification }) => {
         <div className='GetAQuote-Divider'></div>
         <form ref={formRef} className='GetAQuote-Form' onSubmit={handleSubmit}>
           <div className='FormInputContainer'>
-            <label className='FormLabel'>{'Enter your first name'}</label>
+            <label className='FormLabel'>{'Enter your full name'}</label>
             <input
               required
               type='text' 
               className='FormInput' 
               name='firstname'
-            />
-          </div>
-          <div className='FormInputContainer'>
-            <label className='FormLabel'>{'Enter your last name'}</label>
-            <input
-              required
-              type='text' 
-              className='FormInput' 
-              name='lastname'
             />
           </div>
           <div className='FormInputContainer'>
@@ -127,24 +118,7 @@ const GetAQuoteComponent = ({ showNotification }) => {
               name='deliveryAddress'
             />
           </div>
-          <div className='FormInputContainer'>
-            <label className='FormLabel'>{'Select moving date'}</label>
-            <input
-              required
-              type="date" 
-              className='FormInput'
-              name={'movingDate'}
-            />
-          </div>
-          <div className='FormInputContainer'>
-            <label className='FormLabel'>{'inventory list'}</label>
-            <textarea
-              required
-              className='GetAQuote-TextArea FormTextArea'
-              name='inventoryList'
-              placeholder='Please Paste Your Inventory List Here...'
-            ></textarea>
-          </div>
+          
           <button
             type='submit'
             className='GetAQuote-Button Button'

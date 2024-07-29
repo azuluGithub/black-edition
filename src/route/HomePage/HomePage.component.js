@@ -6,8 +6,8 @@ import OurServices from '../../component/OurServices';
 import GetInTouch from '../../component/GetInTouch';
 import FooterDetails from '../../component/FooterDetails';
 import Footer from '../../component/Footer';
-import IntroVideo from '../../component/IntroVideo';
-import Testimonials from '../../component/Testimonials';
+// import IntroVideo from '../../component/IntroVideo';
+// import Testimonials from '../../component/Testimonials';
 import GetCallBack from '../../component/GetCallBack';
 import OurBranches from '../../component/OurBranches';
 
@@ -27,9 +27,9 @@ class HomePageComponent extends PureComponent {
                     <OurServices isWhite={false} />
                 </div>
                 <OurBranches />
-                <Testimonials />
+                {/* <Testimonials /> */}
                 <GetInTouch />
-                <IntroVideo />
+                {/* <IntroVideo /> */}
                 <FooterDetails />
                 <Footer />
             </div>

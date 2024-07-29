@@ -9,9 +9,9 @@ class BannerComponent extends PureComponent {
 
   renderSocial({ icon, id, url }) {
     return (
-      <a target='_blank' rel='noreferrer' href={url} className='Banner-SocialImage' key={id}>
+      <div className='Banner-SocialImage' key={id}>
         { icon } 
-      </a>
+      </div>
     );
   }
 
@@ -20,12 +20,12 @@ class BannerComponent extends PureComponent {
           <div className='Banner-Contacts'>
             <div className='Banner-Contact'>
               <span className='Banner-ContactKey'>{'email'}</span>
-              <a href={`mailto:info@we4ulogistics.co.za`} className='Link Banner-ContactValue'>{'info@we4ulogistics.co.za'}</a>
+              <a href={`mailto:we4u@logistix.co.za`} className='Link Banner-ContactValue'>{'we4u@logistix.co.za'}</a>
             </div>
             <div className='Banner-Contact'>
               <span className='Banner-ContactKey'>{'phone'}</span>
-              <a href={`tel:0875501921`} className='Link Banner-ContactValue'>{'(087) 550 1921'}</a>
-              <a href={`tel:0634896117`} className='Link Banner-ContactValue'>{'(063) 489 6117'}</a>
+              <a href={`tel:0113001111`} className='Link Banner-ContactValue'>{'(011) 300 1111'}</a>
+              <a href={`tel:0234440369`} className='Link Banner-ContactValue'>{'(023) 444 0369'}</a>
             </div>
           </div>
       );
@@ -47,7 +47,7 @@ class BannerComponent extends PureComponent {
           <div className='Banner-Divider'></div>
           <p className='Banner-ContentText'>
             {'Click this link to give us a'} 
-            <a href='tel:0634896117' className='Banner-ContentTextCall'>{' call '}</a> {'or simply click the button below to get a quick quote.'}
+            <a href='tel:0234440369' className='Banner-ContentTextCall'>{' call '}</a> {'or simply click the button below to get a quick quote.'}
           </p>
           <Link to={'/get-a-quote'} className='Link Banner-ButtonContainer'>
             <button className='Banner-ContentButton Button'>{'get a quote'}</button>

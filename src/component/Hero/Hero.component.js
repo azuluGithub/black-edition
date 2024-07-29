@@ -13,9 +13,9 @@ class Hero extends PureComponent {
     
     renderSocial({ icon, id, url }) {
         return (
-          <a target='_blank' rel='noreferrer' href={url} className='Hero-SocialImage' key={id}>
+          <div  className='Hero-SocialImage' key={id}>
             { icon }
-          </a>
+          </div>
         );
     }
     
@@ -34,15 +34,15 @@ class Hero extends PureComponent {
                 <div className='Hero-ContactImage'>
                     <FaEnvelope color='white' fontSize={'20px'} />
                 </div>
-                <a href={`mailto:info@we4ulogistics.co.za`} className='Link Hero-ContactName'>{'info@we4ulogistics.co.za'}</a>
+                <a href={`mailto:we4u@logistix.co.za`} className='Link Hero-ContactName'>{'we4u@logistix.co.za'}</a>
               </div>
               <div className='Hero-Contact'>
                 <div className='Hero-ContactImage'>
                     <FaPhoneAlt color='white' fontSize={'20px'} />
                 </div>
-                <a href={`tel:0875501921`} className='Link Hero-ContactName'>{'(087) 550 1921 '}</a>
+                <a href={`tel:0113001111`} className='Link Hero-ContactName'>{'(011) 300 1111'}</a>
                 <span className='Hero-TextSpacer'>{'|'}</span>
-                <a href={`tel:0634896117`} className='Link Hero-ContactName'>{' (063) 489 6117'}</a>
+                <a href={`tel:0234440369`} className='Link Hero-ContactName'>{'(023) 444 0369'}</a>
               </div>
             </div>
         );

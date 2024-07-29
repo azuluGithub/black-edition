@@ -11,7 +11,7 @@ class TrackMyOrderComponent extends PureComponent {
     renderComponents() {
         const data = {
             heading: 'Track My Order',
-            url: `${process.env.PUBLIC_URL}/assets/we4u/hero_bg_1.jpg`
+            url: `${process.env.PUBLIC_URL}/assets/we4u/img_6.jpg`
         }
 
         return (

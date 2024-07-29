@@ -4,7 +4,7 @@ import Header from '../../component/Header';
 import GetAQuote from '../../component/GetAQuote';
 import Hero from '../../component/Hero';
 import Footer from '../../component/Footer';
-import Map from '../../component/Map';
+// import Map from '../../component/Map';
 import FooterDetails from '../../component/FooterDetails';
 
 class GetAQuoteComponent extends PureComponent {
@@ -22,7 +22,7 @@ class GetAQuoteComponent extends PureComponent {
                 </div>
                 <Hero data={data} />
                 <GetAQuote />
-                <Map />
+                {/* <Map /> */}
                 <FooterDetails />
                 <Footer />
             </div>
